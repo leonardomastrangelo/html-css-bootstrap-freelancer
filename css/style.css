@@ -39,6 +39,15 @@ ul
     background-color :#2C3E50;
 }
 
+/* HEADER */
+#subnav
+{
+    top: calc(100% + 18px);
+    right: 12px;
+    opacity: 0;
+    cursor: none;
+    transition: all 1s;
+}
 /* MAIN */
 .hero-image
 {
@@ -68,8 +77,23 @@ ul
     width: 60px;
     height: 60px;
 }
+
 /* ANIMATIONS/HOVER */
-.fa-solid.fa-star:hover
+
+.burger:hover #subnav
+{
+    top: 100%;
+    right: 12px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#subnav a:hover
+{
+    text-decoration: underline;
+}
+
+.fa-solid.fa-star:hover 
 {
     animation: star 1.5s ease-in-out infinite;
 }
