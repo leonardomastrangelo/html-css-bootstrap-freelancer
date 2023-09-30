@@ -23,6 +23,20 @@ ul
     margin: 0;
 }
 
+h2
+{
+    background: var(--text, linear-gradient(178deg, #DC3B18 -60.92%, #5713E7 261.72%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 3px 1px rgba(117, 43, 212, 0.3);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+h2:hover
+{
+    scale: 1.1;
+}
 .my-fluid
 {
     width: 100%;
@@ -88,7 +102,6 @@ ul
     opacity: 1;
     cursor: pointer;
 }
-
 #subnav a:hover,
 #info span:hover
 {
@@ -150,7 +163,6 @@ ul
     scale: 1.7;
     animation: upper 0.8s ease-in-out infinite;
 }
-
 @keyframes upper
 {
     0%{
@@ -185,12 +197,12 @@ ul
 .fa-brands.fa-google-plus-g,
 .fa-brands.fa-linkedin
 {
-    color: rgba(199, 24, 24, 0.899);
+    color: rgba(199, 24, 24, 0.675);
 }
 .fa-brands.fa-google-plus-g:hover,
 .fa-brands.fa-linkedin:hover
 {
-    color: rgba(255, 0, 0, 0.899);
+    color: rgba(222, 16, 16, 0.899);
 }
 
 
