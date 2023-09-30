@@ -45,7 +45,6 @@ ul
     top: calc(100% + 18px);
     right: 12px;
     opacity: 0;
-    cursor: none;
     transition: all 1s;
 }
 /* MAIN */
@@ -76,10 +75,12 @@ ul
 {
     width: 60px;
     height: 60px;
+    transition: all 0.5s ease-in-out;
 }
 
 /* ANIMATIONS/HOVER */
 
+/* subnav */
 .burger:hover #subnav
 {
     top: 100%;
@@ -88,11 +89,14 @@ ul
     cursor: pointer;
 }
 
-#subnav a:hover
+#subnav a:hover,
+#info span:hover
 {
     text-decoration: underline;
+    cursor: pointer;
 }
 
+/* star */
 .fa-solid.fa-star:hover 
 {
     animation: star 1.5s ease-in-out infinite;
@@ -135,6 +139,7 @@ ul
 
 }
 
+/* card */
 .fa-solid.fa-circle-up
 {
     transition: all 0.5s ease-in-out;
@@ -145,6 +150,7 @@ ul
     scale: 1.7;
     animation: upper 0.8s ease-in-out infinite;
 }
+
 @keyframes upper
 {
     0%{
@@ -162,6 +168,31 @@ ul
         transform: translateY(0);
     }
 }
+
+/* brands */
+.icon:hover
+{
+    scale: 1.2;
+}
+.fa-brands.fa-facebook-f:hover
+{
+    color: rgb(27, 27, 240);
+}
+.fa-brands.fa-twitter:hover
+{
+    color: rgb(27, 27, 240);
+}
+.fa-brands.fa-google-plus-g,
+.fa-brands.fa-linkedin
+{
+    color: rgba(199, 24, 24, 0.899);
+}
+.fa-brands.fa-google-plus-g:hover,
+.fa-brands.fa-linkedin:hover
+{
+    color: rgba(255, 0, 0, 0.899);
+}
+
 
 
 
