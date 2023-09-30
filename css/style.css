@@ -1,10 +1,5 @@
 /* GENERAL */
- *
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
+
 body
 {
     font-family: 'AR One Sans', sans-serif;
@@ -14,6 +9,11 @@ a
 {
     text-decoration: none;
     display: block;
+}
+
+i
+{
+    cursor: pointer;
 }
 
 ul
@@ -68,7 +68,47 @@ ul
     width: 60px;
     height: 60px;
 }
+/* ANIMATIONS/HOVER */
+.fa-solid.fa-star:hover
+{
+    animation: star 1.5s ease-in-out infinite;
+}
+@keyframes star 
+{
+    0%{
+        scale: 1;
+        rotate: 0;
+    }
+    50%{
+        scale: 1.2;
+        rotate: 0;
+    }
+    55%{
+        rotate: 15deg;
+    }
+    60%{
+        rotate: -15deg;
+    }
+    65%{
+        rotate: 15deg;
+    }
+    70%{
+        rotate: -15deg;
+    }
+    75%{
+        rotate: 15deg;
+    }
+    80%{
+        rotate: -15deg;
+    }
+    85%{
+        rotate: 15deg;
+    }
+    90%{
+        rotate: -15deg;
+    }
 
+}
 
 
 
