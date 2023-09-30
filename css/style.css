@@ -82,6 +82,7 @@ ul
     50%{
         scale: 1.2;
         rotate: 0;
+        color: rgb(223, 223, 16);
     }
     55%{
         rotate: 15deg;
@@ -109,6 +110,35 @@ ul
     }
 
 }
+
+.fa-solid.fa-circle-up
+{
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+.fa-solid.fa-circle-up:hover
+{
+    scale: 1.7;
+    animation: upper 0.8s ease-in-out infinite;
+}
+@keyframes upper
+{
+    0%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: translateY(-4px);
+        color: green;
+    }
+    80%
+    {
+        color: green;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 
 
 
