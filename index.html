@@ -22,7 +22,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="text-light bg-dark">
+    <header class="text-light bg-dark position-fixed z-3 w-100">
         <nav class="container d-flex justify-content-between align-items-center py-2">
             <h1 class="fs-3 text-uppercase fw-bold mb-0">start bootstrap</h1>
             <ul class="d-none d-md-flex mb-0 ">
@@ -209,7 +209,31 @@
                     <div><i class="fa-solid fa-star px-2 fs-2"></i></div>
                     <div class="line bg-dark rounded-pill"></div>
                 </div>
+
+                <!-- form -->
+                <div class="mb-3 fs-5 fw-semibold">
+                    <label for="name" class="form-label fs">Name</label>
+                    <input type="text" class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2" id="name">
+                </div>
+
+                <div class="mb-3 fs-5 fw-semibold">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2" id="email">
+                </div>
+
+                <div class="mb-3 fs-5 fw-semibold">
+                    <label for="number" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2" id="number">
+                </div>
+                
+                <div class="mb-3 fs-5 fw-semibold">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2"" name="message" id="message" cols="30" rows="5"></textarea>
+
+                    <button type="submit" class="btn btn-success my-3">Send</button>
+                </div>
             </div>
+
         </section>
     </main>
 
