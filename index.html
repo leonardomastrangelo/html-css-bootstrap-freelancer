@@ -22,40 +22,28 @@
 
 <body>
     <!-- HEADER -->
-    <header class="text-light bg-dark position-fixed z-3 w-100">
-        <nav class="container d-flex justify-content-between align-items-center position-relative py-2">
-            <h1 class="fs-3 text-uppercase fw-bold mb-0">start bootstrap</h1>
-            <ul class="d-none d-md-flex mb-0 ">
-                <li class="ps-3">
-                    <a class="fs-6 text-uppercase text-light" href="#portfolio">portfolio</a>
-                </li>
-                <li class="ps-3">
-                    <a class="fs-6 text-uppercase text-light" href="#about">about</a>
-                </li>
-                <li class="ps-3">
-                    <a class="fs-6 text-uppercase text-light" href="#contact">contact</a>
-                </li>
-            </ul>
-
-            <div class="burger d-md-none d-sm-block border border-light rounded py-2 px-3">              
-                <i class="fa-solid fa-bars fs-6 text-secondary"></i>
-                
-                <div id="subnav" class="position-absolute my-bg-secondary rounded-4 py-2 px-2">
-                    <ul>
-                        <li class="px-2">
-                            <a class="fs-6 text-uppercase text-light" href="#portfolio">portfolio</a>
-                        </li>
-                        <li class="px-2">
-                            <a class="fs-6 text-uppercase text-light" href="#about">about</a>
-                        </li>
-                        <li class="px-2">
-                            <a class="fs-6 text-uppercase text-light" href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="text-light bg-dark position-fixed top-0 z-3 w-100">
+        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+            <div class="container text-uppercase">
+              <a class="navbar-brand fw-bold" href="#">start bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">about</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
-        </nav>
+          </nav>
     </header>
 
     <!-- MAIN -->
@@ -69,7 +57,7 @@
                 </div>
 
                 <!-- title -->
-                <h2 class="text-uppercase fs-1 fw-bold">start bootstrap</h2>
+                <h2 class="text-uppercase fw-bold display-5">start bootstrap</h2>
 
                 <!-- star bar -->
                 <div class="d-flex justify-content-center align-items-center pt-4 pb-3">
@@ -99,7 +87,7 @@
         <section id="portfolio" class="py-5">
             <div class="container text-dark">
                 <!-- title -->
-                <h2 class="text-uppercase fs-1 fw-bold text-center">portfolio</h2>
+                <h2 class="text-uppercase display-5 fw-bold text-center">portfolio</h2>
 
                 <!-- star bar -->
                 <div class="d-flex justify-content-center align-items-center pt-4 pb-3">
@@ -185,7 +173,7 @@
         <section id="about" class="bg-success text-light py-5">
             <div class="container w-75">
                 <!-- title -->
-                <h2 class="text-uppercase fs-1 fw-bold text-center">about</h2>
+                <h2 class="text-uppercase display-5 fw-bold text-center">about</h2>
 
                 <!-- star bar -->
                 <div class="d-flex justify-content-center align-items-center pt-4 pb-4">
@@ -215,10 +203,10 @@
 
                 <!-- call to action -->
                 <div class="text-center py-4">
-                    <button class="btn btn-lg btn-outline-light">
+                    <a href="#" class="btn btn-lg btn-outline-light">
                         <i class="fa-solid fa-download"></i>
                         <span>Download</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -227,7 +215,7 @@
         <section id="contact" class="text-dark py-5">
             <div class="container w-75">
                 <!-- title -->
-                <h2 class="text-uppercase fs-1 fw-bold text-center">contact me</h2>
+                <h2 class="text-uppercase display-5 fw-bold text-center">contact me</h2>
 
                 <!-- star bar -->
                 <div class="d-flex justify-content-center align-items-center pt-4 pb-4">
@@ -237,31 +225,25 @@
                 </div>
 
                 <!-- form -->
-                <div class="mb-3 fs-5 fw-semibold">
-                    <label for="name" class="form-label fs">Name</label>
-                    <input type="text" class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2"
-                        id="name">
-                </div>
-
-                <div class="mb-3 fs-5 fw-semibold">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2"
-                        id="email">
-                </div>
-
-                <div class="mb-3 fs-5 fw-semibold">
-                    <label for="number" class="form-label">Phone Number</label>
-                    <input type="number" class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2"
-                        id="number">
-                </div>
-
-                <div class="mb-3 fs-5 fw-semibold">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control border-start-0 border-end-0 border-top-0 border-bottom-2"" name="
-                        message" id="message" cols="30" rows="5"></textarea>
-
-                    <button type="submit" class="btn btn-success my-3">Send</button>
-                </div>
+                <form >
+                    <div class="mb-3">
+                        <input type="text" class="fs-4 pb-3 form-control border-start-0 border-end-0 border-top-0 border-bottom-1"
+                            placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="fs-4 pb-3 form-control border-start-0 border-end-0 border-top-0 border-bottom-1"
+                            placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="fs-4 pb-3 form-control border-start-0 border-end-0 border-top-0 border-bottom-1"
+                            placeholder="Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="fs-4 form-control border-start-0 border-end-0 border-top-0 border-bottom-2"" name="
+                            message" placeholder="Message" cols="30" rows="5"></textarea>
+                        <button type="submit" class="btn btn-success my-3">Send</button>
+                    </div>
+                </form>
             </div>
 
         </section>
@@ -337,6 +319,8 @@
         </section>
     </footer>
 
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

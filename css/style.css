@@ -4,64 +4,37 @@ body
 {
     font-family: 'AR One Sans', sans-serif;
 }
-
 a
 {
     text-decoration: none;
     display: block;
 }
-
 i
 {
     cursor: pointer;
 }
-
 ul
 {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
-h2
-{
-    
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-}
-h2:hover
-{
-    scale: 1.1;
-    background: var(--text, linear-gradient(178deg, #DC3B18 -60.92%, #5713E7 261.72%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 4px 3px 1px rgba(117, 43, 212, 0.3);
-}
 .my-fluid
 {
     width: 100%;
     display: block;
 }
-
 .my-bg-primary
 {
     background-color: #3A556D;
 }
-
 .my-bg-secondary
 {
     background-color :#2C3E50;
 }
 
 /* HEADER */
-#subnav
-{
-    top: calc(100% + 18px);
-    right: 12px;
-    opacity: 0;
-    transition: all 1s;
-}
+
 /* MAIN */
 .hero-image
 {
@@ -94,20 +67,20 @@ h2:hover
 }
 
 /* ANIMATIONS/HOVER */
-
-/* subnav */
-.burger:hover #subnav
+h2
 {
-    top: 100%;
-    right: 12px;
-    opacity: 1;
+    
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
-#subnav a:hover,
-#info span:hover
+h2:hover
 {
-    text-decoration: underline;
-    cursor: pointer;
+    scale: 1.1;
+    background: var(--text, linear-gradient(178deg, #DC3B18 -60.92%, #5713E7 261.72%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 1px rgba(117, 43, 212, 0.3);
 }
 
 /* star */
