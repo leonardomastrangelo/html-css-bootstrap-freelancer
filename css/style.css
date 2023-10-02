@@ -16,8 +16,6 @@ i
 ul
 {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 .my-fluid
 {
@@ -67,13 +65,13 @@ ul
 }
 
 /* ANIMATIONS/HOVER */
-h2
+#main-page h2
 {
     
     transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
-h2:hover
+#main-page h2:hover
 {
     scale: 1.1;
     background: var(--text, linear-gradient(178deg, #DC3B18 -60.92%, #5713E7 261.72%));
@@ -155,6 +153,12 @@ h2:hover
     }
 }
 
+footer .freelance:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* brands */
 .icon:hover
 {
@@ -177,6 +181,61 @@ h2:hover
 .fa-brands.fa-linkedin:hover
 {
     color: rgba(222, 16, 16, 0.899);
+}
+
+
+/* 2ND PAGE PORTFOLIO */
+.my-bg-brown
+{
+    background-color: #976253;
+}
+.my-bg-blue
+{
+    background-color: #1F2438;
+}
+
+.accordion-button:hover
+{
+    color: black;
+}
+
+#animated
+{
+    margin: 200px 0;
+}
+.image-new
+{
+   
+    width: 300px;
+}
+.my-circle-1
+{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(86, 255, 86, 0.759);
+    transition: all 1s ease-in-out 0.3s;
+    transform-origin: right top;
+}
+
+.my-circle-1:hover
+{
+    transform: scale(5);
+    
+}
+
+.my-circle-2
+{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(86, 255, 86, 0.759);
+    transition: all 1s ease-in-out 0.3s;
+    transform-origin: left top;
+}
+
+.my-circle-2:hover
+{
+    transform: scale(5);
+    
 }
 
 
