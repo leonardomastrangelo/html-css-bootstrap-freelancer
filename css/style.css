@@ -212,33 +212,45 @@ footer .freelance:hover
 {
     width: 70px;
     height: 70px;
-    background-color: rgba(86, 255, 86, 0.759);
+    background-color: rgba(86, 255, 86, 0.432);
     transition: all 1s ease-in-out 0.3s;
-    transform-origin: right top;
+    transform-origin: right 50%;
 }
-
 .my-circle-1:hover
 {
     transform: scale(5);
     
 }
-
 .my-circle-2
 {
     width: 70px;
     height: 70px;
-    background-color: rgba(86, 255, 86, 0.759);
+    background-color: rgba(31, 155, 250, 0.432);
     transition: all 1s ease-in-out 0.3s;
-    transform-origin: left top;
+    transform-origin: left 50%;
 }
-
 .my-circle-2:hover
 {
     transform: scale(5);
     
 }
-
-
+.helper
+{
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    top: 60%;
+    right: 205%;
+    opacity: 0;
+    transition: all 1s ease-in 1s;
+}
+#animated .text-center:hover .helper
+{
+    opacity: 1;
+    top: 120%;
+    right: 205%;
+    scale: 1.2;
+}
 
 
 
